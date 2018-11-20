@@ -1,0 +1,47 @@
+:root {
+  --textColor: #222222;
+  --linkColor: #f56085;
+  --themeColor: #f56085;
+  --lightGrey: #f9f7f7;
+}
+
+.navbarWrapper {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fcfcfc;
+  border-top: 1px solid darkgray;
+  z-index: 10;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.navbar a {
+  flex-grow: 1;
+  text-align: center;
+  text-decoration: none;
+  color: grey;
+  display: block;
+  padding: 5px 20px;
+  font-size: 12px;
+}
+
+.navbar a.active {
+  color: var(--themeColor);
+}
+
+.navbar a img {
+  display: block;
+  margin: 0 auto 3px auto;
+  height: 30px;
+}
+
+.navbar a:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}

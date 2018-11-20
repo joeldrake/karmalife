@@ -1,0 +1,37 @@
+:root {
+  --textColor: #222222;
+  --linkColor: #f56085;
+  --themeColor: #f56085;
+  --lightGrey: #f9f7f7;
+}
+
+.subcategoryWrapper {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.subcategoryWrapper a {
+  text-align: center;
+  padding: 15px 20px;
+  flex-grow: 1;
+  color: grey;
+  text-decoration: none;
+}
+.subcategoryWrapper a:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.subcategoryWrapper a.active {
+  color: var(--linkColor);
+}
+
+.subCategoryUnderline {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 2px solid #f56085;
+}

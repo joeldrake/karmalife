@@ -1,0 +1,67 @@
+:root {
+  --textColor: #222222;
+  --linkColor: #f56085;
+  --themeColor: #f56085;
+  --lightGrey: #f9f7f7;
+}
+
+.pin,
+.cluster {
+  position: relative;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  color: #ffffff;
+  border-radius: 100%;
+  background-color: var(--themeColor);
+}
+.pin {
+  width: 25px;
+  height: 25px;
+  transform: translateY(-100%) rotate(-45deg);
+  transform-origin: left bottom;
+  border-bottom-left-radius: 0;
+}
+
+.pin .pinContent {
+  transform: rotate(45deg);
+  font-size: 1.1em;
+  padding: 4px 0px;
+  text-align: center;
+}
+
+.cluster {
+  width: 35px;
+  height: 35px;
+  transform: translateY(-50%) translateX(-50%);
+}
+
+.cluster .pinContent {
+  font-size: 1.3em;
+  padding: 8px 0px;
+  text-align: center;
+}
+
+.empty {
+  background-color: var(--lightGrey);
+  border: 1px solid rgb(171, 171, 171);
+}
+
+.empty .pinContent {
+  display: none;
+}
+
+.empty:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 40%;
+  height: 40%;
+  transform: translate(-50%, -50%);
+  background-image: linear-gradient(#ccc, #f4f4f4);
+  border-radius: 100%;
+}
+
+.pin.empty:after {
+  transform: translate(-50%, -50%) rotate(45deg);
+}

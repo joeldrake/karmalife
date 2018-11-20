@@ -1,0 +1,127 @@
+:root {
+  --textColor: #222222;
+  --linkColor: #f56085;
+  --themeColor: #f56085;
+  --lightGrey: #f9f7f7;
+}
+
+.productsWrapper {
+  background: #f9f7f7;
+  min-height: 100px;
+}
+
+.productsTopText {
+  text-align: center;
+  color: #ccc;
+  float: left;
+  margin: 5px;
+}
+
+.centerNavigation {
+  float: left;
+  width: 25px;
+  height: 25px;
+}
+
+.toggleProducts {
+  position: relative;
+  float: right;
+  border: 0;
+  background: var(--themeColor);
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  cursor: pointer;
+  color: #fff;
+}
+
+.toggleProducts:after {
+  content: '';
+  position: absolute;
+  top: 9px;
+  left: 8px;
+
+  width: 8px;
+  height: 8px;
+  border: 2px solid white;
+  border-top: 0;
+  border-left: 0;
+
+  transform: rotate(-135deg);
+}
+
+.toggleProducts.open:after {
+  transform: rotate(45deg);
+  top: 5px;
+  left: 7px;
+}
+
+.productsContent {
+  margin-top: 20px;
+  padding-bottom: 56px;
+}
+
+.productItem {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  background-image: linear-gradient(#e47c7c, #681e39);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 20px;
+  margin: 0 auto 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.productItem.noleft {
+  opacity: 0.3;
+}
+
+.productItem .tagsWrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.productItem .left,
+.productItem .tag {
+  display: inline-block;
+  white-space: nowrap;
+  background-color: var(--themeColor);
+  padding: 7px 12px;
+  border-radius: 25px;
+  margin: 0 5px 5px 0;
+}
+.productItem .tag {
+  background-color: #eb7148;
+  font-size: 0.7em;
+  padding: 9px 12px;
+}
+
+.productItem .title {
+  width: 70%;
+  margin-top: 40px;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.productItem .priceWrapper {
+  width: 30%;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.productItem .baseprice {
+  text-decoration: line-through;
+  white-space: nowrap;
+}
+
+.productItem .price {
+  font-size: 1.5em;
+  white-space: nowrap;
+}

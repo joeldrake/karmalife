@@ -1,0 +1,34 @@
+:root {
+  --textColor: #222222;
+  --linkColor: #f56085;
+  --themeColor: #f56085;
+  --lightGrey: #f9f7f7;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #f9f7f7;
+  font-family: 'Circular', Helvetica, Arial, Lucida, sans-serif;
+  font-size: 16px;
+}
+
+.widthWrapper {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.addPadding {
+  padding: 20px;
+}
+
+.clearfix:after {
+  content: '';
+  display: table;
+  clear: both;
+}

@@ -1,0 +1,21 @@
+{
+  "short_name": "Karma",
+  "name": "Karma",
+  "description": "The app that helps you rescue unsold food from being wasted",
+  "icons": [
+    {
+      "src": "/static/img/Karma-Icon-Pink.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/static/img/Karma-Icon-Pink.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#f56085",
+  "background_color": "#f56085"
+}
